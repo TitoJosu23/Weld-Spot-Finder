@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weld Spot Finder - Honda</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Weld Spot Finder - Honda Weld Dept</h1>
+
+    <label for="area">Select Area:</label>
+    <select id="area">
+      <option value="">-- Choose an area --</option>
+      <option value="wheelHouse">Wheel House</option>
+      <option value="rearFloor">Rear Floor</option>
+      <option value="frontFloor">Front Floor</option>
+      <option value="frameComp">Frame Comp</option>
+      <option value="floorComp">Floor Comp</option>
+    </select>
+
+    <label for="searchId">Search by Weld ID:</label>
+    <input type="text" id="searchId" placeholder="e.g. id101" />
+
+    <label for="searchRobot">Search by Robot Name (e.g. 22A):</label>
+    <input type="text" id="searchRobot" placeholder="e.g. 22A" />
+
+    <button id="btnSearch">Search</button>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

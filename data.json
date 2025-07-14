@@ -1,0 +1,27 @@
+{
+  "wheelHouse": {
+    "robot22A": ["id101", "id102", "id103", "id108923", "u367"],
+    "robot23B": ["id104", "id105"],
+    "robot24C": ["id106", "id107"]
+  },
+  "rearFloor": {
+    "robot22A": ["id201", "id202", "id203"],
+    "robot25D": ["id204", "id205"],
+    "robot26E": ["id206"]
+  },
+  "frontFloor": {
+    "robot22A": ["id301", "id302"],
+    "robot27F": ["id303", "id304"],
+    "robot28G": ["id305"]
+  },
+  "frameComp": {
+    "robot22A": ["id401", "id402"],
+    "robot29H": ["id403", "id404"],
+    "robot30I": ["id405"]
+  },
+  "floorComp": {
+    "robot22A": ["id501", "id502"],
+    "robot31J": ["id503", "id504"],
+    "robot32K": ["id505"]
+  }
+}
