@@ -2,31 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Weld Spot Finder - Honda</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weld Spot Finder</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
-    <h1>Weld Spot Finder - Honda Weld Dept</h1>
+    <h1>Weld Spot Finder</h1>
 
-    <label for="area">Select Area:</label>
-    <select id="area">
-      <option value="">-- Choose an area --</option>
-      <option value="wheelHouse">Wheel House</option>
-      <option value="rearFloor">Rear Floor</option>
-      <option value="frontFloor">Front Floor</option>
-      <option value="frameComp">Frame Comp</option>
-      <option value="floorComp">Floor Comp</option>
-    </select>
+    <div class="form-group">
+      <label for="areaSelect">Select Area:</label>
+      <select id="areaSelect">
+        <option value="">-- Select Area --</option>
+        <option value="Wheel house">Wheel house</option>
+        <option value="Rear floor">Rear floor</option>
+        <option value="Front floor">Front floor</option>
+        <option value="Frame comp">Frame comp</option>
+        <option value="Floor comp">Floor comp</option>
+      </select>
+    </div>
 
-    <label for="searchId">Search by Weld ID:</label>
-    <input type="text" id="searchId" placeholder="e.g. id101" />
+    <div class="form-group">
+      <label for="modelSelect">Select Car Model:</label>
+      <select id="modelSelect">
+        <option value="">-- Select Model --</option>
+        <option value="30A">30A</option>
+        <option value="30B">30B</option>
+      </select>
+    </div>
 
-    <label for="searchRobot">Search by Robot Name (e.g. 22A):</label>
-    <input type="text" id="searchRobot" placeholder="e.g. 22A" />
+    <div class="form-group">
+      <label for="robotInput">Search by Robot (ex: 22A):</label>
+      <input type="text" id="robotInput" placeholder="Enter Robot Name (e.g. 22A)" />
+      <button onclick="searchByRobot()">Search</button>
+    </div>
 
-    <button id="btnSearch">Search</button>
+    <div class="form-group">
+      <label for="weldInput">Search by Weld ID:</label>
+      <input type="text" id="weldInput" placeholder="Enter Weld ID" />
+      <button onclick="searchByWeld()">Search</button>
+    </div>
 
     <div id="result"></div>
   </div>
